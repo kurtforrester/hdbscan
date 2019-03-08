@@ -3,3 +3,6 @@ from .robust_single_linkage_ import RobustSingleLinkage, robust_single_linkage
 from .validity import validity_index
 from .prediction import approximate_predict, membership_vector, all_points_membership_vectors
 
+import pkg_resources
+
+__version__ = pkg_resources.get_distribution("hdbscan").version
